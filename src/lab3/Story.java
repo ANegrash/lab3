@@ -2,19 +2,17 @@ package lab3;
 
 public class Story {
 	public void play() {
-        
     }
 
 	public static void main(String[] args) {
         Story startS = new Story() {
             @Override
             public void play() {
-                System.out.println("Создание объектной модели начато");
+				System.out.println("Создание объектной модели начато...");
             }
         };
 
-
-
+		System.out.println();
         startS.play();
 		System.out.println();
 	        InPeople pers = new People("автор", 154, 1);
@@ -76,10 +74,33 @@ public class Story {
 	        Status pravd = new Status("правдивость");
 	        Status neizvest = new Status("неизвестен");
 	        System.out.println();
-	       
 
 
- 
+		long startTNL = System.currentTimeMillis();
+		for (int i=0; i<100; i++){
+			SimpleCode sc = new SimpleCode(i);
+
+		}
+		long finishTNL = System.currentTimeMillis();
+		long notLyambdaTime = finishTNL - startTNL;
+
+
+		long startTL = System.currentTimeMillis();
+		for (int i=0; i<100; i++){
+			Lyambda lm = new Lyambda(i);
+
+		}
+		long finishTL = System.currentTimeMillis();
+		long lyambdaTime = finishTL - startTL;
+
+
+
+
+		System.out.println(lyambdaTime + "мс - время выполнения лямбда-выражения ");
+		System.out.println(notLyambdaTime + "мс - время выполнения обычного кода ");
+
+
+
 	    }
 
 	

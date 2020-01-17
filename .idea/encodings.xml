@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/lab3/AbPlace.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/lab3/Actions.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/lab3/Objects.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/lab3/People.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/lab3/Probability.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/lab3/Status.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/lab3/Story.java" charset="windows-1251" />
   </component>
 </project>
